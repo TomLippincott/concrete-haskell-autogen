@@ -1,0 +1,25 @@
+name: concrete-haskell-autogen
+version: '0.0.0.2'
+synopsis: Automatically generated Thrift definitions for the Concrete data format.
+description: Concrete is a Thrift-based data specification designed for Natural Language
+  Processing (NLP) applications.
+category: Data
+author: Thomas Lippincott
+maintainer: tom@cs.jhu.edu
+copyright: '2017'
+license: GPL
+homepage: https://github.com/hltcoe
+dependencies:
+  - QuickCheck
+  - base >=4.6 && <5
+  - bytestring
+  - containers
+  - hashable
+  - lens
+  - text
+  - thrift
+  - unordered-containers
+  - vector
+library:
+  source-dirs: src
+  exposed-modules:

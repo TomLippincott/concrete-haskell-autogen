@@ -1,0 +1,5 @@
+*~
+stack.yaml
+*cabal
+.stack-work
+dist
