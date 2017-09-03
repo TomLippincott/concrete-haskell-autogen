@@ -54,7 +54,8 @@ do
     do
 	echo -e "    - ${PREFIX}.Lens.${t}" >> package.yaml
 	echo -e "{-# LANGUAGE TemplateHaskell #-}\nmodule Data.Concrete.Autogen.Lens.${t} where\n\nimport Control.Lens (makeLensesWith, classyRules_, lensField, mappingNamer, (&), (.~))\nimport Data.Concrete.Autogen.${n}_Types\n" > src/Data/Concrete/Autogen/Lens/${t}.hs
-	echo -e "makeLensesWith (classyRules_ & lensField .~ mappingNamer (\\\\f -> [\"c\" ++ dropWhile (\\\\c -> c /= '_') f])) ''${t}" >> src/Data/Concrete/Autogen/Lens/${t}.hs
+	echo -e "makeLensesWith (classyRules_ & lensField .~ mappingNamer (\\\\f -> ['_':f])) ''${t}" >> src/Data/Concrete/Autogen/Lens/${t}.hs
+	#echo -e "makeLensesWith (classyRules_ & lensField .~ mappingNamer (\\\\f -> [take 1 f ++ dropWhile (\\\\c -> c /= '_') f])) ''${t}" >> src/Data/Concrete/Autogen/Lens/${t}.hs
     done
 done
 

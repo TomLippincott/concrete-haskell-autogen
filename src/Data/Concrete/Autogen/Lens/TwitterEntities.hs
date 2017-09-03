@@ -4,4 +4,4 @@ module Data.Concrete.Autogen.Lens.TwitterEntities where
 import Control.Lens (makeLensesWith, classyRules_, lensField, mappingNamer, (&), (.~))
 import Data.Concrete.Autogen.Twitter_Types
 
-makeLensesWith (classyRules_ & lensField .~ mappingNamer (\f -> ["c" ++ dropWhile (\c -> c /= '_') f])) ''TwitterEntities
+makeLensesWith (classyRules_ & lensField .~ mappingNamer (\f -> ['_':f])) ''TwitterEntities
