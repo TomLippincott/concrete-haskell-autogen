@@ -45,6 +45,7 @@ import Data.Concrete.Autogen.Communication_Types as Communication_Types
 import Data.Concrete.Autogen.Email_Types as Email_Types
 import Data.Concrete.Autogen.Entities_Types as Entities_Types
 import Data.Concrete.Autogen.Ex_Types as Ex_Types
+import Data.Concrete.Autogen.Graph_Types as Graph_Types
 import Data.Concrete.Autogen.Language_Types as Language_Types
 import Data.Concrete.Autogen.Learn_Types as Learn_Types
 import Data.Concrete.Autogen.Linking_Types as Linking_Types

@@ -1,5 +1,5 @@
 name: concrete-haskell-autogen
-version: '0.0.0.2'
+version: '0.0.0.3'
 synopsis: Automatically generated Thrift definitions for the Concrete data format.
 description: Concrete is a Thrift-based data specification designed for Natural Language
   Processing (NLP) applications.
@@ -90,6 +90,18 @@ library:
     - Data.Concrete.Autogen.Ex_Types
     - Data.Concrete.Autogen.Ex_Consts
     - Data.Concrete.Autogen.Lens.ConcreteThriftException
+    - Data.Concrete.Autogen.Graph_Types
+    - Data.Concrete.Autogen.Graph_Consts
+    - Data.Concrete.Autogen.Lens.EdgeKind
+    - Data.Concrete.Autogen.Lens.Node
+    - Data.Concrete.Autogen.Lens.Edge
+    - Data.Concrete.Autogen.Lens.GraphProperty
+    - Data.Concrete.Autogen.Lens.GraphPropertyAssignment
+    - Data.Concrete.Autogen.Lens.GraphAssociation
+    - Data.Concrete.Autogen.Lens.GraphView
+    - Data.Concrete.Autogen.Lens.NodeSet
+    - Data.Concrete.Autogen.Lens.EdgeSet
+    - Data.Concrete.Autogen.Lens.MultiGraph
     - Data.Concrete.Autogen.Language_Types
     - Data.Concrete.Autogen.Language_Consts
     - Data.Concrete.Autogen.Lens.LanguageIdentification
